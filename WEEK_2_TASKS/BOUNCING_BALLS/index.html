@@ -21,11 +21,20 @@
 
 
                 }
+                .ball:nth-child(1){
+                        background-color: darkcyan;
+                }
                 .ball:nth-child(2){
                         animation-delay: 0.08s;
+                        background-color: chocolate;
                 }
                 .ball:nth-child(3){
                         animation-delay: 0.2s;
+                        background-color: cornflowerblue;
+                }
+                .ball:nth-child(4){
+                        animation-delay: 0.3s;
+                        background-color: darkmagenta;
                 }
                 @keyframes bounce{
                         to{
@@ -36,6 +45,7 @@
 </head>
 <body>
        <div class="bouncing-balls">
+        <div class="ball"></div>
         <div class="ball"></div>
         <div class="ball"></div>
         <div class="ball"></div>
