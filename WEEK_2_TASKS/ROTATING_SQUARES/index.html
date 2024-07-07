@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rotating Squares Loader</title>
+        <style>
+                .rotating-squares{
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        background-color: #f0f2f5;
+                }
+                .square{
+                        width: 20px;
+                        height: 20px;
+                        margin: 0 2px;
+                        border: 1px solid #000;
+                        background-color: #3498db;
+                        animation: rotate 2s infinite alternate-reverse;
+                }
+               
+                @keyframes rotate{
+                        to{
+                                transform: rotate(360deg);
+                        }
+                        
+                }
+        </style>
+</head>
+<body>
+        <div class="rotating-squares">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                
+        </div>
+</body>
+</html>
