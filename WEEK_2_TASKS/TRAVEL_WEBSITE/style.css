@@ -1,0 +1,222 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .navbar {
+        background-color: #333;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        margin: 0;
+    }
+    
+    .nav-links li {
+        margin: 0 15px;
+    }
+    
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .header {
+        background: url('https://rockalittletravel.com/wp-content/uploads/2020/04/rue-cremieux-1024x674.jpg') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .header-content {
+        max-width: 600px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+    }
+    
+    .header h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    
+    .header p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #ff6600;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 60px 20px;
+        background-color: #f9f9f9;
+    }
+    
+    .feature-box {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+        transition: transform 0.3s;
+    }
+    
+    .feature-box:hover {
+        transform: translateY(-10px);
+    }
+    
+    .feature-box img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    .features h2 {
+        margin-top: 15px;
+        font-size: 24px;
+    }
+    
+    .features p {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    
+    .testimonials {
+        background-color: #333;
+        color: #fff;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    
+    .testimonial-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .testimonial-box {
+        background-color: #444;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .testimonial-box p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .testimonial-box h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .contact {
+        background-color: #f9f9f9;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    
+    .contact h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    
+    .contact form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact input,
+    .contact textarea {
+        width: 100%;
+        max-width: 400px;
+        padding: 10
+    }
+    .contact input,
+.contact textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#back-to-top i {
+    position: relative;
+    top: 10%;
+}
+    
