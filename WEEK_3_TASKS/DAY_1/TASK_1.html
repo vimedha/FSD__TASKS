@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fortune Teller</title>
+</head>
+<body>
+    <h1>Fortune Teller</h1>
+    <div id="fortuneDisplay"></div>
+
+    <script>
+        function tellFortune(numChildren, partnerName, location, jobTitle) {
+            const fortune = `You will be a ${jobTitle} in ${location}, and married to ${partnerName} with ${numChildren} kids.`;
+            const fortuneDiv = document.getElementById("fortuneDisplay");
+            const fortunePara = document.createElement("p");
+            fortunePara.textContent = fortune;
+            fortuneDiv.appendChild(fortunePara);
+        }
+
+        tellFortune(3, 'Alex', 'New York', 'Software Developer');
+        tellFortune(2, 'Jordan', 'San Francisco', 'Data Scientist');
+        tellFortune(4, 'Taylor', 'Austin', 'UX Designer');
+    </script>
+</body>
+</html>
