@@ -1,0 +1,170 @@
+/* Universal reset */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Color Variables */
+    :root {
+        --background: #000430;
+        --secondaryBackground: #171c48;
+        --text: #ffffff;
+        --purple: #828dff;
+        --teal: #24feee;
+    }
+    
+    /* Body styles */
+    body {
+        background-color: var(--background);
+        color: var(--text);
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Main container for the app */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 120px auto 0 auto;
+        max-width: 500px;
+    }
+    
+    /* Stats container styles */
+    .stats-container {
+        padding: 30px;
+        border-radius: 20px;
+        border: 2px solid var(--purple);
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    /* Details inside the stats container */
+    .details {
+        width: 100%;
+    }
+    
+    /* Progress bar container */
+    #progressBar {
+        width: 100%;
+        height: 10px;
+        background-color: var(--secondaryBackground);
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    /* Progress indicator */
+    #progress {
+        width: 90%; /* Adjust this dynamically based on progress */
+        height: 10px;
+        background-color: var(--teal);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    /* Stats numbers (e.g., 2/3 completed) */
+    #numbers {
+        width: 100px;
+        height: 100px;
+        background-color: var(--purple);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    /* Form for task input */
+    form {
+        margin-top: 60px;
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+    
+    /* Task input field */
+    #taskInput {
+        padding: 16px;
+        background: var(--secondaryBackground);
+        border: 1px solid var(--purple);
+        border-radius: 10px;
+        color: var(--text);
+        width: 100%;
+    }
+    
+    /* Add task button */
+    #newTask {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--purple);
+        color: var(--text);
+        font-size: 30px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    #newTask:hover {
+        background-color: var(--teal);
+    }
+    
+    /* Task list styles */
+    #taskList {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    /* Individual task item container */
+    .taskItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid var(--secondaryBackground);
+    }
+    
+    /* Task text and completion checkbox */
+    .task {
+        display: flex;
+        align-items: center;
+    }
+    
+    .task p {
+        margin-left: 10px;
+        font-size: 18px;
+        color: var(--text);
+    }
+    
+    /* Completed task style */
+    .completed p {
+        text-decoration: line-through;
+        color: var(--teal) /* Gray out completed tasks */
+    }
+    
+    /* Edit and delete icons */
+    .icons img {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        cursor: pointer;
+        border: 2px solids;
+
+    }
+    
+    /* Checkbox for task completion */
+    .checkbox {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+    
