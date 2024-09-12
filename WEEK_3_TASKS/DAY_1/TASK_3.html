@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Rectangler</title>
+</head>
+<body>
+        <div id="output"></div>
+        <script>
+                function calcPerimeter (length, width){
+                        const perimeter = 2*(length+width);
+                        const message = `The perimeter is ${perimeter}`;
+                        const outputDiv = document.getElementById("output");
+                        const perimeterPara = document.createElement('p');
+                        perimeterPara.textContent = message;
+                        outputDiv.appendChild(perimeterPara);
+
+                }
+                function calcArea(length,width){
+                        const area = length*width;
+                        const message = `The Area is ${area}`;
+                        const outputDiv = document.getElementById("output");
+                        const areaPara = document.createElement('p');
+                        areaPara.textContent = message;
+                        outputDiv.appendChild(areaPara);
+
+                }
+                calcPerimeter(2,4);
+                calcArea(2,4);
+        </script>
+</body>
+</html>

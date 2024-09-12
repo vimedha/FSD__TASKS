@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The coffee consumption Editor</title>
+</head>
+<body>
+       <div id="coffeeDisplay"></div> 
+       <script>
+        function calculateCoffeeSupply(age, cupsPerDay){
+                const maxAge=80;
+                const remainingYears = maxAge-age;
+                const totalCups = remainingYears * 365.25 * cupsPerDay;
+                const roundedValue = Math.round(totalCups);
+                const message = `You will need ${roundedValue} cups of coffee to keep you awake for more ${remainingYears}`;
+                const coffeeDiv = document.getElementById("coffeeDisplay");
+                const coffeePara = document.createElement('p');
+                coffeePara.textContent=message;
+                coffeeDiv.appendChild(coffeePara);
+        }
+        calculateCoffeeSupply(25,2.5);
+        calculateCoffeeSupply(25,3.5);
+        calculateCoffeeSupply(25,4.5);
+       </script>
+</body>
+</html>
